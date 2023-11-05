@@ -2,6 +2,7 @@
 marp: true
 header: "**マイクラプラグインの作り方**"
 footer: "by **＠aoissx**"
+size: 16:9
 ---
 
 # マイクラプラグインの作り方
@@ -65,15 +66,41 @@ IntelliJ IDEA (以下 Idea)は、統合開発環境です。実際に開発を�
 
 ---
 
-## 開発準備
-
----
-
 ## Scoopのインストール
 
+### Scoopとは
+
+さまざまなツールやソフトをターミナルから
+インストールできるパッケージマネージャ。慣れるとマジで便利。
+
+### インストール方法
+
+1. PowerShellを開く
+2. 下記のコードをコピーしてPowershellで実行
+
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+    irm get.scoop.sh | iex
+    ```
+
+3. 完了！
+
 ---
 
-## Scoopを使ってJavaをインストール
+## Scoopを使ってツールをインストール
+
+- git
+- aria2
+- openjdk17
+
+上記の3つをインストールします。
+
+```powershell
+scoop install git            # Gitのインストール
+scoop install aria2          # ダウンロードを高速化するやつ
+scoop bucket add java        # Javaをインストールする準備
+scoop install java/openjdk17 # Javaをインストールする
+```
 
 ---
 
