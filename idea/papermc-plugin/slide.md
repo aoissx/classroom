@@ -14,11 +14,10 @@ size: 16:9
 ## 目次
 
 1. プラグインとは
-2. プラグインを作る準備
-3. 簡単なプラグインの作り方
-4. 少し難しいプラグインの作り方
-5. コツ
-6. 終わりに
+2. 簡単なプラグインの作り方
+3. 少し難しいプラグインの作り方
+4. コツ
+5. 終わりに
 
 ---
 
@@ -55,55 +54,13 @@ MODのように、**新しいモンスター**や**武器**を追加できない
 
 ## プラグインを作る準備
 
-今回は**Windows**で作成するものとして説明をします。  
-今回インストールするものは下記の2つです。  
+プラグインを作るために必要なツールです。  
+どうしても**Vimで開発したい！**, **VS Codeを使いたい！** というこだわりが無いなら
+黙って下記2つのツールをインスコしてください。
 
-- [Scoop](https://scoop.sh/)
-- [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+- **openjdk17**
+- **IntelliJ IDEA**
 
-Scoopは、Javaやその他開発ツールをインストールする際に使用する。
-IntelliJ IDEA (以下 Idea)は、統合開発環境です。実際に開発を行います。  
-
----
-
-## Scoopのインストール
-
-### Scoopとは
-
-さまざまなツールやソフトをターミナルから
-インストールできるパッケージマネージャ。慣れるとマジで便利。
-
-### インストール方法
-
-1. PowerShellを開く
-2. 下記のコードをコピーしてPowershellで実行
-
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-    irm get.scoop.sh | iex
-    ```
-
-3. 完了！
-
----
-
-## Scoopを使ってツールをインストール
-
-- git
-- aria2
-- openjdk17
-
-上記の3つをインストールします。
-
-```powershell
-scoop install git            # Gitのインストール
-scoop install aria2          # ダウンロードを高速化するやつ
-scoop bucket add java        # Javaをインストールする準備
-scoop install java/openjdk17 # Javaをインストールする
-```
-
----
-
-## Ideaをインストール
+君たちならできるはずさ！
 
 ---
